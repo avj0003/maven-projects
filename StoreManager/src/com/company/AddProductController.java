@@ -5,10 +5,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddProductController {
-    public AddProductView view;
+    public AddProductUI view;
     public IDataAccess dataAdapter;
 
-    public AddProductController(AddProductView view, IDataAccess adapter) {
+    public AddProductController(AddProductUI view, IDataAccess adapter) {
         this.view = view;
         this.dataAdapter = adapter;
 

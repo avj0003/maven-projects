@@ -1,29 +1,48 @@
 package com.company;
 
+import javax.swing.*;
+
 public class StoreManager {
+    public static String DEFAULT_DB_FILE = "store.db";
+    IDataAccess mAdapter;
+    MainUI mMainUI;
 
-    public static void main(String[] args) {
-        System.out.println("Hello class!");
-        IDataAccess adapter = new SQLiteDataAdapter();
-        adapter.connect();
-        ProductModel product = adapter.loadProduct(1);
-        CustomerModel customer = adapter.loadCustomer(1);
-        OrderModel order = adapter.loadOrder(1);
-        System.out.println("Product: ID = " + product.mProductID + " Name = " + product.mName);
-        AddProductView addProductView = new AddProductView();
-        AddProductController addProductController = new AddProductController(addProductView, adapter);
+    static StoreManager instance = null;
 
-        System.out.println("Customer: ID = " + customer.mCustomerID + " Name = " + customer.mName);
-        AddCustomerView addCustomerView = new AddCustomerView();
-        AddCustomerController addCustomerController = new AddCustomerController(addCustomerView, adapter);
-
-        System.out.println("Customer: ID = " + order.mCustomerID + " Product ID= " + order.mProductID);
-        AddOrderView addOrderView = new AddOrderView();
-        AddOrderController addOrderController = new AddOrderController(addOrderView, adapter);
-
-        addProductView.setVisible(true);
-        addCustomerView.setVisible(true);
-        addOrderView.setVisible(true);
-
+    public static StoreManager getInstance() {
+        if (instance == null) {
+            instance = new StoreManager();
+            instance.setup("SQLite", true);
+        }
+        return instance;
     }
+
+    public IDataAccess getDataAccess() {
+        return mAdapter;
+    }
+
+    private void setup(String dbms, boolean cache) {
+        if (dbms.equals("SQLite"))
+            mAdapter = new SQLiteDataAdapter();
+
+        String dbFile = DEFAULT_DB_FILE;
+        if (dbFile.length() == 0) {
+            JFileChooser fc = new JFileChooser();
+            fc.setDialogTitle("Select the DB file!!!");
+            int r = fc.showOpenDialog(null);
+            if (r == JFileChooser.APPROVE_OPTION)
+                dbFile = fc.getSelectedFile().getAbsolutePath();
+        }
+        if (mAdapter.connect(dbFile))
+            System.out.println("Connection to SQLite has been established.");
+        else
+            System.out.println(mAdapter.getErrorMessage());
+
+        mMainUI = new MainUI();
+    }
+
+    public void run() {
+        mMainUI.view.setVisible(true);
+    }
+
 }

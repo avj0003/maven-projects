@@ -1,14 +1,15 @@
 package com.company;
 
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddCustomerController {
-    public AddCustomerView view;
+    public AddCustomerUI view;
     public IDataAccess dataAdapter;
 
-    public AddCustomerController(AddCustomerView view, IDataAccess adapter) {
+    public AddCustomerController(AddCustomerUI view, IDataAccess adapter) {
         this.view = view;
         this.dataAdapter = adapter;
 
@@ -25,7 +26,7 @@ public class AddCustomerController {
             customer.mCustomerID = Integer.parseInt(view.txtCustomerID.getText());
             customer.mName = view.txtName.getText();
             customer.mAddress = view.txtAddress.getText();
-            customer.mPhone = view.txtPhone.getText();
+            customer.mPhone = Integer.parseInt(view.txtPhone.getText());
 
             dataAdapter.saveCustomer(customer);
             JOptionPane.showMessageDialog(null, "Name = " + customer.mName);
@@ -39,5 +40,5 @@ public class AddCustomerController {
             view.setVisible(false);
         }
     }
-
 }
+

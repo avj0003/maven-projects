@@ -1,6 +1,6 @@
 package com.company;
 
 public class CustomerModel {
-    public int mCustomerID;
-    public String mName, mAddress, mPhone;
+    public int mCustomerID, mPhone;
+    public String mName, mAddress;
 }
