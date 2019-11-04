@@ -15,7 +15,7 @@ public class SQLiteDataAdapter implements IDataAccess {
         try {
             // db parameters
             String url = "jdbc:sqlite:" + path;
-            // create a connection to the database
+            //            // create a connection to the database
             conn = DriverManager.getConnection(url);
             return true;
 

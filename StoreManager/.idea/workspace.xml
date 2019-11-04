@@ -3,37 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97d1b56f-5b6d-48da-a17d-5ca9fa5feb4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StoreManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StoreManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController$AddButtonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController$AddButtonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController$CancelButtonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController$CancelButtonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddCustomerView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddOrderController$AddButtonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddOrderController$CancelButtonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddOrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddOrderView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController$AddButtonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController$AddButtonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController$CancelButtonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController$CancelButtonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/AddProductView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/CustomerModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/CustomerModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/IDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/IDataAccess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/OrderModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/ProductModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/ProductModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/SQLiteDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/SQLiteDataAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager/com/company/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager/com/company/StoreManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AddCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddCustomerView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddOrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddOrderView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AddProductView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CustomerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/IDataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OrderModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ProductModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/SQLiteDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SQLiteDataAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StoreManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
