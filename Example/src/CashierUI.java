@@ -2,9 +2,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
 
 public class CashierUI {
     public JFrame view;
+
+    Socket link;
+    Scanner input;
+    PrintWriter output;
+    int accessToken;
 
     public JButton btnAddPurchase = new JButton("Add New Purchase");
     public JButton btnUpdatePurchase = new JButton("Update Purchase");
@@ -13,7 +21,7 @@ public class CashierUI {
     public JButton btnUpdate = new JButton("Update Information");
     public JButton btnLogout = new JButton("Logout");
 
-    public CashierUI() {
+    public CashierUI(UserModel user) {
         this.view = new JFrame();
 
         view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,6 +34,12 @@ public class CashierUI {
         title.setFont(title.getFont().deriveFont (24.0f));
         view.getContentPane().add(title);
 
+        JPanel panelUser = new JPanel(new FlowLayout());
+        panelUser.add(new JLabel("Fullname: " + user.mFullname));
+        panelUser.add(new JLabel("Username: " + user.mUsername));
+
+        view.getContentPane().add(panelUser);
+
         JPanel panelButtons = new JPanel(new FlowLayout());
         panelButtons.add(btnAddPurchase);
         panelButtons.add(btnUpdatePurchase);
@@ -35,6 +49,8 @@ public class CashierUI {
         panelButtons.add(btnLogout);
 
         view.getContentPane().add(panelButtons);
+
+
 
 
         btnAddPurchase.addActionListener(new ActionListener() {
@@ -68,5 +84,13 @@ public class CashierUI {
                 ac.run();
             }
         });
+
+        btnUpdate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                UpdateInfo ui = new UpdateInfo(user);
+                ui.run();
+            }
+        } );
     }
 }

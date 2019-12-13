@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974491c3-7634-4d9f-9a4a-354c666e4d5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StoreManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StoreManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/META-INF/Example.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/ManagerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/SQLiteDataAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/SQLiteDataAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/StoreManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/StoreServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/StoreServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/out/production/Example/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/out/production/Example/store.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/AddCustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/AddCustomerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/ManagerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/ManagerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/ProductModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/SQLiteDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/SQLiteDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/StoreManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/StoreServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/StoreServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Example/src/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Example/src/store.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager_ClientServer/META-INF/StoreManager_ClientServer.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StoreManager_ClientServer/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StoreManager_ClientServer/store.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

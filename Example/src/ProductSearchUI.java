@@ -35,19 +35,15 @@ public class ProductSearchUI {
             view.getContentPane().add(priceMax);
             view.getContentPane().add(txtMax);
             view.getContentPane().add(btnSearch);
-
-
             btnSearch.addActionListener(new ProductSearchUI.AddButtonListerner());
-
             tableData.addColumn("ProductID");
             tableData.addColumn("Product Name");
             tableData.addColumn("Price");
             tableData.addColumn("Quantity");
-
+            txtMax.setText(String.valueOf(999));
+            txtMin.setText(String.valueOf(0));
             productTable = new JTable(tableData);
-
             JScrollPane scrollableList = new JScrollPane(productTable);
-
             view.getContentPane().add(scrollableList);
         }
 

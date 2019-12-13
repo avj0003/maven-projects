@@ -7,10 +7,13 @@ import java.awt.event.ActionListener;
 public class ManagerUI {
     public JFrame view;
 
-    public JButton btnManageCustomer = new JButton("Manage Customers");
-    public JButton btnManageProduct = new JButton("Manage Products");
+    public JButton btnAddProduct = new JButton("Add New Product");
+    public JButton btnUpdateProduct = new JButton("Update Product");
+    public JButton viewSummary = new JButton("View Summary Report");
+    public JButton btnUpdate = new JButton("Update Information");
+    public JButton btnLogout = new JButton("Logout");
 
-    public ManagerUI() {
+    public ManagerUI(UserModel user) {
         this.view = new JFrame();
 
         view.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,28 +26,44 @@ public class ManagerUI {
         title.setFont (title.getFont ().deriveFont (24.0f));
         view.getContentPane().add(title);
 
-        JPanel panelButtons = new JPanel(new FlowLayout());
-        panelButtons.add(btnManageProduct);
-        panelButtons.add(btnManageCustomer);
+        JPanel panelUser = new JPanel(new FlowLayout());
+        panelUser.add(new JLabel("Fullname: " + user.mFullname));
+        panelUser.add(new JLabel("Username: " + user.mUsername));
 
+        view.getContentPane().add(panelUser);
+
+        JPanel panelButtons = new JPanel(new FlowLayout());
+        panelButtons.add(btnAddProduct);
+        panelButtons.add(btnUpdateProduct);
+        panelButtons.add(viewSummary);
+        panelButtons.add(btnUpdate);
+        panelButtons.add(btnLogout);
         view.getContentPane().add(panelButtons);
 
-
-        btnManageProduct.addActionListener(new ActionListener() {
+        btnUpdateProduct.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ManageProductUI ui = new ManageProductUI();
+                UpdateProductUI ui = new UpdateProductUI();
                 ui.run();
             }
         });
 
-        btnManageCustomer.addActionListener(new ActionListener() {
+        btnAddProduct.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ManageCustomerUI ui = new ManageCustomerUI();
+                AddProductUI ui = new AddProductUI();
                 ui.run();
             }
         });
+
+        btnUpdate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                UpdateInfo ui = new UpdateInfo(user);
+                ui.run();
+            }
+        } );
+
 
     }
 }

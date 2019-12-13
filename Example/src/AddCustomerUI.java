@@ -15,8 +15,7 @@ public class AddCustomerUI {
     public JTextField txtName = new JTextField(20);
     public JTextField txtAddress = new JTextField(20);
     public JTextField txtPhone = new JTextField(20);
-
-       public JButton btnAdd = new JButton("Add");
+    public JButton btnAdd = new JButton("Add");
     public JButton btnCancel = new JButton("Cancel");
 
 

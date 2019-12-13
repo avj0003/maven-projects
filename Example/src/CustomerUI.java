@@ -33,7 +33,7 @@ public class CustomerUI {
 
         JPanel panelUser = new JPanel(new FlowLayout());
         panelUser.add(new JLabel("Fullname: " + user.mFullname));
-        panelUser.add(new JLabel("CustomerID: " + user.mCustomerID));
+        panelUser.add(new JLabel("Username: " + user.mUsername));
 
         view.getContentPane().add(panelUser);
 
@@ -70,6 +70,15 @@ public class CustomerUI {
                 ui.view.setVisible(true);
             }
         } );
+
+        btnUpdate.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                UpdateInfo ui = new UpdateInfo(user);
+                ui.run();
+            }
+        } );
+
 
     }
 }

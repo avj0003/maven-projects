@@ -53,13 +53,6 @@ public class LoginUI {
 
     }
 
-//    public static void main(String[] args) {
-//        int port = 1000;
-//        LoginUI ui = new LoginUI();
-//        ui.view.setVisible(true);
-//
-//    }
-
     private class LogoutActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
@@ -124,11 +117,16 @@ public class LoginUI {
 
                 System.out.println("User = " + user);
                 if (user.mUserType == UserModel.MANAGER) {
-                    ManagerUI ui = new ManagerUI();
+                    ManagerUI ui = new ManagerUI(user);
                     ui.view.setVisible(true);
                 }
                 else if (user.mUserType == UserModel.CASHIER) {
-                    CashierUI ui = new CashierUI();
+                    CashierUI ui = new CashierUI(user);
+                    System.out.println("MainUI = " + ui);
+                    ui.view.setVisible(true);
+                }
+                else if (user.mUserType == UserModel.ADMIN) {
+                    AdminUI ui = new AdminUI(user);
                     System.out.println("MainUI = " + ui);
                     ui.view.setVisible(true);
                 }

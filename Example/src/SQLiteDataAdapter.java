@@ -11,7 +11,7 @@ import java.util.List;
 public class SQLiteDataAdapter implements IDataAdapter {
 
     Connection conn = null;
-    public static String path = "C:\\Users\\abhii\\IdeaProjects\\Example\\src\\store.db";
+    public static String path = "C:\\Users\\abhii\\IdeaProjects\\maven-projects\\Example\\src\\store.db";
 
     public int connect(String dbfile) {
         try {
@@ -41,17 +41,18 @@ public class SQLiteDataAdapter implements IDataAdapter {
 
     public ProductModel loadProduct(int productID) {
         connect(path);
-        ProductModel product = new ProductModel();;
+        ProductModel product = null;
         try {
-
             String sql = "SELECT * FROM Products WHERE ProductId = " + productID;
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
+                product = new ProductModel();
                 product.mProductID = rs.getInt("ProductId");
                 product.mName = rs.getString("Name");
                 product.mPrice = rs.getDouble("Price");
                 product.mQuantity = rs.getDouble("Quantity");
+                product.mVendor = rs.getString("Vendor");
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -63,13 +64,14 @@ public class SQLiteDataAdapter implements IDataAdapter {
 
     public PurchaseModel loadPurchase(int purchaseId) {
         connect(path);
-        PurchaseModel purchase = new PurchaseModel();;
+        PurchaseModel purchase = null;
         try {
 
             String sql = "SELECT * FROM Orders WHERE OrderId = " + purchaseId;
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
+                purchase = new PurchaseModel();
                 purchase.mPurchaseID = rs.getInt("OrderId");
                 purchase.mCustomerID = rs.getInt("CustomerId");
                 purchase.mProductID = rs.getInt("ProductId");
@@ -97,7 +99,7 @@ public class SQLiteDataAdapter implements IDataAdapter {
                 stmt.executeUpdate("DELETE FROM Products WHERE ProductID = " + product.mProductID);
             }
 
-            String sql = "INSERT INTO Products(ProductId, Name, Price, Quantity) VALUES " + product;
+            String sql = "INSERT INTO Products(ProductId, Name, Price, Quantity, Vendor) VALUES " + product;
             stmt.executeUpdate(sql);
         } catch (Exception e) {
             String msg = e.getMessage();
@@ -178,6 +180,57 @@ public class SQLiteDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public int updateUserInfo(UserModel userModel) {
+        int response = USER_SAVE_FAILED;
+        try {
+            connect(path);
+            Statement stmt = conn.createStatement();
+            String sql = "UPDATE users SET Fullname='"+ userModel.mFullname+"', Password='"+ userModel.mPassword +"' WHERE Username = '"+ userModel.mUsername +"'";
+            stmt.executeUpdate(sql);
+            response = USER_SAVE_OK;
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            System.out.println(msg);
+            response = USER_SAVE_FAILED;
+        } finally {
+            disconnect();
+        }
+        return response;
+    }
+
+    @Override
+    public int updateUser(UserModel userModel) {
+        int response = USER_SAVE_FAILED;
+        try {
+            connect(path);
+            Statement stmt = conn.createStatement();
+            UserModel p = loadUser(userModel.mUsername); // check if this product exists
+            if (p != null) {
+                stmt.executeUpdate("DELETE FROM Users WHERE Username = '"+p.mUsername+"'");
+            }
+            ResultSet rs;
+            if (userModel.mUserType == UserModel.CUSTOMER) {
+                do {
+                    int randomUserId = (int) (Math.random()*(9999 - 1)) + 1;
+                    String checkUserId = "SELECT CustomerId from Users where CustomerId = '"+ randomUserId +"'";
+                    rs = stmt.executeQuery(checkUserId);
+                    userModel.mCustomerID = randomUserId;
+                } while(rs.next());
+            }
+            String sql = "INSERT INTO Users VALUES " + userModel;
+            stmt.executeUpdate(sql);
+            response = USER_SAVE_OK;
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            System.out.println(msg);
+            response = USER_SAVE_FAILED;
+        } finally {
+            disconnect();
+        }
+        return response;
+    }
+
+    @Override
     public PurchaseListModel loadPurchaseHistory(int id) {
         PurchaseListModel res = new PurchaseListModel();
         try {
@@ -234,7 +287,6 @@ public class SQLiteDataAdapter implements IDataAdapter {
 
     public CustomerModel loadCustomer(int id) {
         CustomerModel customer = null;
-
         try {
             connect(path);
             String sql = "SELECT * FROM Customers WHERE CustomerId = " + id;
@@ -258,6 +310,7 @@ public class SQLiteDataAdapter implements IDataAdapter {
 
     @Override
     public int saveCustomer(CustomerModel model)  {
+        connect(path);
         try {
         String sql = "INSERT INTO Customers VALUES " + model;
         Statement stmt = conn.createStatement();
@@ -273,12 +326,39 @@ public class SQLiteDataAdapter implements IDataAdapter {
         return CUSTOMER_SAVE_OK;
     }
 
-    public UserModel loadUser(String username) {
-        UserModel user = null;
-
+    @Override
+    public int saveUser(UserModel userModel) {
         try {
             connect(path);
-            String sql = "SELECT * FROM Users WHERE Username = \"" + username + "\"";
+            ResultSet rs;
+            if (userModel.mUserType == UserModel.CUSTOMER) {
+                do {
+                    int randomUserId = (int) (Math.random()*(9999 - 1)) + 1;
+                    String checkUserId = "SELECT CustomerId from Users where CustomerId = '"+ randomUserId +"'";
+                    Statement stmt = conn.createStatement();
+                    rs = stmt.executeQuery(checkUserId);
+                    userModel.mCustomerID = randomUserId;
+                } while(rs.next());
+            }
+            String sql = "INSERT INTO Users VALUES " + userModel;
+            Statement stmt1 = conn.createStatement();
+            stmt1.executeUpdate(sql);
+        } catch (Exception e) {
+            String msg = e.getMessage();
+            System.out.println(msg);
+            if (msg.contains("UNIQUE constraint failed"))
+                return USER_SAVE_FAILED;
+        } finally {
+            disconnect();
+        }
+        return USER_SAVE_OK;
+    }
+
+    public UserModel loadUser(String username) {
+        UserModel user = null;
+        try {
+            connect(path);
+            String sql = "SELECT * FROM Users WHERE Username = '"+ username +"' ";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {

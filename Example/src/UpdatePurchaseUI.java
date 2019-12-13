@@ -112,6 +112,9 @@ public class UpdatePurchaseUI {
         }
 
         private void process() {
+
+            purchase = new PurchaseModel();
+
             String s = txtPurchaseID.getText();
             if (s.length() == 0) {
                 loadPurchaseName.setText("Purchase Name: [not specified!]");

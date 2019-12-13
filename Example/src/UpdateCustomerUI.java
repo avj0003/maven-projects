@@ -72,6 +72,7 @@ public class UpdateCustomerUI {
     class FindCustomerListener implements ActionListener {
         public void actionPerformed(ActionEvent actionEvent) {
 
+            customerModel = new CustomerModel();
 
             String s = txtCustomerID.getText();
 

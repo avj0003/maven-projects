@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StoreServer {
-    static String dbfile = "C:\\Users\\abhii\\IdeaProjects\\Example\\src\\store.db";
+    static String dbfile = "C:\\Users\\abhii\\IdeaProjects\\maven-projects\\Example\\src\\store.db";
 
     public static void main(String[] args) {
 

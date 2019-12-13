@@ -92,6 +92,16 @@ public class NetworkDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public int updateUserInfo(UserModel userModel) {
+        return 0;
+    }
+
+    @Override
+    public int updateUser(UserModel userModel) {
+        return 0;
+    }
+
+    @Override
     public PurchaseListModel loadPurchaseHistory(int customerID) {
         msg.code = MessageModel.GET_PURCHASE_LIST;
         msg.data = Integer.toString(customerID);
@@ -126,6 +136,11 @@ public class NetworkDataAdapter implements IDataAdapter {
 
             return gson.fromJson(msg.data, ProductListModel.class);
         }
+    }
+
+    @Override
+    public int saveUser(UserModel userModel) {
+        return 0;
     }
 
     @Override

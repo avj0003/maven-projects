@@ -14,7 +14,8 @@ public class UserModel {
         sb.append("\"").append(mUsername).append("\"").append(",");
         sb.append("\"").append(mPassword).append("\"").append(",");
         sb.append("\"").append(mFullname).append("\"").append(",");
-        sb.append(mUserType).append(")");
+        sb.append(mUserType).append(",");
+        sb.append(mCustomerID).append(")");
         return sb.toString();
     }
 

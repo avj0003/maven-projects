@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class StoreManager {
     public static String dbms = "SQLite";
-    public static String path = "C:\\Users\\abhii\\IdeaProjects\\Example\\src\\store.db";
+    public static String path = "C:\\Users\\abhii\\IdeaProjects\\maven-projects\\Example\\src\\store.db";
 
     IDataAdapter dataAdapter = null;
     private static StoreManager instance = null;

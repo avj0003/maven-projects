@@ -49,6 +49,16 @@ public class OracleDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public int updateUserInfo(UserModel userModel) {
+        return 0;
+    }
+
+    @Override
+    public int updateUser(UserModel userModel) {
+        return 0;
+    }
+
+    @Override
     public PurchaseListModel loadPurchaseHistory(int customerID) {
         return null;
     }
@@ -56,6 +66,11 @@ public class OracleDataAdapter implements IDataAdapter {
     @Override
     public ProductListModel searchProduct(String name, double minPrice, double maxPrice) {
         return null;
+    }
+
+    @Override
+    public int saveUser(UserModel userModel) {
+        return 0;
     }
 
     @Override

@@ -9,7 +9,8 @@ public class ProductModel {
         sb.append(mProductID).append(",");
         sb.append("\"").append(mName).append("\"").append(",");
         sb.append(mPrice).append(",");
-        sb.append(mQuantity).append(")");
+        sb.append(mQuantity).append(",");
+        sb.append("\"").append(mVendor).append("\"").append(")");
         return sb.toString();
     }
 
