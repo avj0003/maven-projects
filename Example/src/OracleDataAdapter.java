@@ -64,6 +64,11 @@ public class OracleDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public PurchaseListModel loadPurchaseSummary() {
+        return null;
+    }
+
+    @Override
     public ProductListModel searchProduct(String name, double minPrice, double maxPrice) {
         return null;
     }

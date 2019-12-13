@@ -43,6 +43,8 @@ public interface IDataAdapter {
 
     public PurchaseListModel loadPurchaseHistory(int customerID);
 
+    PurchaseListModel loadPurchaseSummary();
+
     public ProductListModel searchProduct(String name, double minPrice, double maxPrice);
 
     int saveUser(UserModel userModel);

@@ -79,6 +79,15 @@ public class CustomerUI {
             }
         } );
 
+        btnLogout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                view.setVisible(false);
+                LoginUI ui = new LoginUI();
+                ui.view.setVisible(true);
+            }
+        });
+
 
     }
 }

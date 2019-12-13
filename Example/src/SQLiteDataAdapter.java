@@ -260,6 +260,35 @@ public class SQLiteDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public PurchaseListModel loadPurchaseSummary() {
+        PurchaseListModel res = new PurchaseListModel();
+        try {
+            connect(path);
+            String sql = "SELECT * FROM Orders";
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                PurchaseModel purchase = new PurchaseModel();
+                purchase.mPurchaseID = rs.getInt("OrderId");
+                purchase.mCustomerID = rs.getInt("CustomerId");
+                purchase.mProductID = rs.getInt("ProductId");
+                purchase.mPrice = rs.getDouble("Price");
+                purchase.mQuantity = rs.getDouble("Quantity");
+                purchase.mCost = rs.getDouble("TotalCost");
+                purchase.mTax = rs.getDouble("TotalTax");
+                purchase.mDate = rs.getString("Date");
+                res.purchases.add(purchase);
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        } finally {
+            disconnect();
+        }
+        return res;
+    }
+
+    @Override
     public ProductListModel searchProduct(String name, double minPrice, double maxPrice) {
         ProductListModel res = new ProductListModel();
         try {
@@ -378,5 +407,7 @@ public class SQLiteDataAdapter implements IDataAdapter {
         }
         return user;
     }
+
+
 
 }

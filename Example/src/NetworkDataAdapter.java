@@ -120,6 +120,11 @@ public class NetworkDataAdapter implements IDataAdapter {
     }
 
     @Override
+    public PurchaseListModel loadPurchaseSummary() {
+        return null;
+    }
+
+    @Override
     public ProductListModel searchProduct(String name, double minPrice, double maxPrice) {
         msg.code = MessageModel.SEARCH_PRODUCT;
         msg.data = "name";
