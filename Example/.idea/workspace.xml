@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea27f99b-a217-44b4-b7d8-b77ff6b8e3d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CashierUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CashierUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IDataAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ManagerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ManagerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NetworkDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetworkDataAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OracleDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OracleDataAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLiteDataAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLiteDataAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Example/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Example/store.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.db" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
