@@ -20,7 +20,7 @@ public class MySQLdb {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             //creating connection with the database
-            connection = DriverManager.getConnection("", "", "");
+            connection = DriverManager.getConnection("jdbc:mysql://jpcloudusa026.nshostserver.net/accecssi_mymath", "accecssi_fzj0007", "DonJulio#1942");
         } catch (Exception e) {
             e.printStackTrace();
         }

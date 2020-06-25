@@ -30,7 +30,7 @@ public class StudentQuestions extends HttpServlet {
                     List<MathTopic> topiclist = db.getMathTopics();
                     request.setAttribute("topics", topiclist);
                     RequestDispatcher requestDispatcher =
-                            request.getRequestDispatcher("/pages/student/questions.jsp");
+                            request.getRequestDispatcher("/pages/student/questions.jsp?no="+ list.size());
                     requestDispatcher.forward(request, response);
                 }
             } else {

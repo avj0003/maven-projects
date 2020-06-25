@@ -35,6 +35,7 @@
 
     <!-- Responsive Voice -->
     <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<%--    <script src="https://code.responsivevoice.org/responsivevoice.js?key=w2UILPfm"></script>--%>
 
     <!-- Custom Fonts -->
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

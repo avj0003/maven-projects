@@ -58,11 +58,6 @@
             if (user.getRole().equals("student")) {
 %>
 <script>
-    window.onload = function () {
-        loadAnnyang();
-        loadJwerty();
-        setTimeout(responsiveVoice.speak("You are on the Practice Questions Page. Questions will be asked one at a time. Are you ready?"), 2000);
-    };
 
     function loadJwerty() {
         <%
@@ -82,7 +77,7 @@
         if (annyang) {
             var commands = {
                 'Yes': function () {
-                    setTimeout(responsiveVoice.speak("Excellent. We have 5 questions on a page. Press any key from 1 to 5 to attempt question."), 2000);
+                    setTimeout(responsiveVoice.speak("Excellent. We have <%= request.getParameter("no") %> questions on a page. Press any key from 1 to <%= request.getParameter("no") %> to attempt question."), 2000);
                 },
                 'Practice': function() {
                     window.location="../../StudentQuestions";
@@ -166,7 +161,6 @@
             </div>
             <!-- /.col-lg-12 -->
         </div>
-
         <!-- /.row -->
         <div class="row">
             <div class="col-lg-12">
@@ -235,6 +229,11 @@
             lengthChange: false
         });
     });
+    window.onload = function () {
+        loadAnnyang();
+        loadJwerty();
+        setTimeout(responsiveVoice.speak("You are on the Practice Questions Page. Questions will be asked one at a time. Are you ready?"), 2000);
+    };
 </script>
 </body>
 <%

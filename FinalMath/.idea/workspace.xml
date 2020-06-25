@@ -6,31 +6,41 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a74d3a-ed9f-49aa-b87b-5286ac1dc9be" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="02a74d3a-ed9f-49aa-b87b-5286ac1dc9be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c6f738f7-d0ce-4655-9969-652043bd23f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c6f738f7-d0ce-4655-9969-652043bd23f0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war/FinalMath_war.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/WEB-INF/classes/Services/MySQLdb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/WEB-INF/classes/Services/MySQLdb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/WEB-INF/classes/Servlets/StudentQuestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/WEB-INF/classes/Servlets/StudentQuestions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/connection.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/dashboard_professor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/dashboard_professor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/questions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/questions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/quiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/quiz.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/students.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/topics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/professor/topics.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/student/attempt_each_question.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/student/attempt_each_question.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/student/questions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/FinalMath_war_exploded/pages/student/questions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalMath/Services/MySQLdb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalMath/Services/MySQLdb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalMath/Servlets/StudentQuestions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalMath/Servlets/StudentQuestions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/MySQLdb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/MySQLdb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlets/StudentQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servlets/StudentQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/connection.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/professor/dashboard_professor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/professor/dashboard_professor.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/professor/questions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/professor/questions.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/professor/quiz.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/professor/quiz.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/professor/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/professor/students.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/professor/topics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/professor/topics.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/student/attempt_each_question.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/student/attempt_each_question.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/student/questions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/student/questions.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="accecssi_mymath@jpcloudusa026.nshostserver.net" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +51,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -49,21 +62,27 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1WwHRoEWJTpHpZ1xqJJMWyqSxXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564103674359" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.17.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -87,18 +106,6 @@
       <recent name="C:\Users\abhii\IdeaProjects\FinalMath\web\pages\professor" />
       <recent name="C:\Users\abhii\IdeaProjects\FinalMath\web" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.11" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false">
@@ -175,22 +182,6 @@
       </method>
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <option name="contentProportion" value="0.18290043" />
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1fbb7bb9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -245,6 +236,80 @@
     <option name="totallyTimeSpent" value="120042000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1591714344272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1591714344272" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592915669537">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592915669537" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591707567819">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591707567819" />
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1591277713606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591277713606" />
+    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.1.bottom" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.1.center" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.1.left" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.1.right" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.2.bottom" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.2.center" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.2.left" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state width="1877" height="170" key="GridCell.Tab.2.right" timestamp="1592925238087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592925238087" />
+    <state x="660" y="254" width="650" height="650" key="find.popup" timestamp="1592921063202">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="254" width="650" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592921063202" />
+    <state x="342" y="102" key="new project wizard" timestamp="1591277735969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="102" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1591277735969" />
   </component>
 </project>
